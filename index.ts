@@ -34,9 +34,9 @@ const userTime = await inquirer.prompt([
   {
     message: "How many times you want to repeat your message?",
     name: "repeat",
-    type: "number",
-    validate: (input: number) =>
-      Number.isInteger(input) && input > 0
+    type: "input",
+    validate: (input: string) =>
+      !isNaN(Number(input)) && Number(input) > 0
         ? true
         : "Please enter a valid positive integer",
   },
@@ -51,7 +51,7 @@ let num = 0;
 function message() {
   num++;
   console.log(
-    chalk.bold.underline.yellowBright(`\n\t ***${userTime.message}*** 🎂🍰🎈`)
+    chalk.bold.underline.yellowBright(`\n\t ***${userTime.message}*** `)
   );
   if (num >= userTime.repeat) {
     clearInterval(interval);

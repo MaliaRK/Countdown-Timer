@@ -1,6 +1,6 @@
 {
   "name": "mr-countdown-timer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"Countdown Timer that counts down in seconds, minutes, jours and days to any date, with time zone support.\"",
   "main": "index.js",
   "type": "module",
