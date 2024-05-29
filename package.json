@@ -1,0 +1,20 @@
+{
+  "name": "mr-countdown-timer",
+  "version": "1.0.0",
+  "description": "\"Countdown Timer that counts down in seconds, minutes, jours and days to any date, with time zone support.\"",
+  "main": "index.js",
+  "type": "module",
+  "publishConfig": {"access": "public"},
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Malia Raees\"",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.22"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
